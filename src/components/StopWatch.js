@@ -1,19 +1,20 @@
 import React from 'react'
-
+import '../Watch.css'
 class StopWatch extends React.Component {
 
     state = {start: 0 }
 
     intervalHelper = () => {
-        setInterval(this.startTimer, 1000)
+        this.interval = setInterval(this.startTimer, 1000)
     }
 
     startTimer = () => {
         this.setState({ start: this.state.start + 1})
     }
 
-    pauseTimer = () => {
-        console.log('hello')
+    clearTimer = () => {
+        clearInterval(this.interval);
+        this.setState({ start: 0})
     }
 
 
@@ -23,8 +24,7 @@ class StopWatch extends React.Component {
             <div className='watch-div'>
                 {this.state.start}
                 <button onClick={this.intervalHelper}>Start your timer</button>
-                <button onClick={this.pauseTimer}>Stop Timer</button>
-                <button>Reset</button>
+                <button onClick={this.clearTimer}>Stop / Reset</button>
             </div>
             
         </div>
