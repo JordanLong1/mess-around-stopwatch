@@ -23,8 +23,8 @@ class StopWatch extends React.Component {
         return <div className='watch-container'>
             <div className='watch-div'>
                 {this.state.start}
-                <button onClick={this.intervalHelper}>Start your timer</button>
-                <button onClick={this.clearTimer}>Stop / Reset</button>
+                <button onClick={this.intervalHelper} className='btn'>Start your timer</button>
+                <button onClick={this.clearTimer} className='btn'>Stop / Reset</button>
             </div>
             
         </div>
