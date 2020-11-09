@@ -1,9 +1,20 @@
 .watch-container {
-    height: 50%;
     width: 100%;
     
 }
 
 .watch-div {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    background-color: blue;
+}
+
+.container-holder {
+    display: block;
+    margin: 0 auto;
+
+}
+
+.btn {
+    border: solid black;
 }
