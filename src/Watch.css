@@ -4,17 +4,29 @@
 }
 
 .watch-div {
-    display: block;
-    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 40%;
     background-color: blue;
+}
+
+.watch-div h1 {
+    color: white;
+    text-align: center;
+}
+
+.watch-div p {
+    color: white;
+    text-align: center;
 }
 
 .container-holder {
     display: block;
     margin: 0 auto;
-
+    border: solid black;
 }
 
 .btn {
+    display: inline;
     border: solid black;
 }
